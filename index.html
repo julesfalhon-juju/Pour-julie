@@ -35,16 +35,18 @@ canvas{position:fixed;inset:0;z-index:2}
 <div id="sky"></div><div id="sun"></div><div id="sea"></div>
 <div id="photos"></div>
 <div id="msg"></div>
-<div id="end"><div class="pol"><img id="endImg" src="photos/fin.jpg" alt=""></div><p>Je veux te revoir Julie,<br>je t'aime ❤️</p></div>
+<div id="end"><div class="pol"><img id="endImg" src="Fin.png" alt=""></div><p>Je veux te revoir Julie,<br>je t'aime ❤️</p></div>
 <div id="hint">Glisse pour faire tourner le bouquet</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 <script>
 /* ====== À PERSONNALISER ====== */
-// Mets tes 15 photos dans un dossier "photos" : 1.jpg ... 15.jpg
-// (la photo n° 1 apparaît quand elle retire la 1re rose, etc.)
-const PHOTOS = Array.from({length:15}, (_, i) => `photos/${i+1}.jpg`);
+const PHOTOS = [
+  "1.jpg", "2.JPG", "3.JPG", "4.JPG", "5.JPG",
+  "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.JPG",
+  "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg"
+];
 const WORDS = ["un peu","beaucoup","passionnément","à la folie","pas du tout"];
 /* ============================= */
 
